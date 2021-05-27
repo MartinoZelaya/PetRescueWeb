@@ -1,0 +1,38 @@
+<div class="container">  
+<div class="row">
+<form class="form-signin offset-md-4 col-md-4" [formGroup]="NuevaMascota">
+    <div class="text-center mb-4">
+      <img class="mb-4" src="https://i.pinimg.com/564x/eb/cf/ca/ebcfca9969145351c830ae0a399ca8d1.jpg" alt="" width="300" height="300">
+      <h1 class="h3 mb-3 font-weight-normal">Ingresa una nueva mascota</h1>
+      <p>Danos todos los datos que tengas de ella, junto a una fotografia</p>
+    </div>
+
+    <div class="form-label-group">
+        <label for="inputName">Nombre</label>
+      <input type="nombre"  id="inputName"  formControlName="nombre" class="form-control" placeholder="Firulais" required> 
+    </div>
+
+    <div class="form-label-group">
+        <label for="inputType">Tipo</label>
+      <input type="tipo" id="inputType" formControlName="tipo" class="form-control" placeholder="Perro" required>      
+    </div>
+
+    <div class="form-label-group">
+        <label for="inputAge">Edad</label>
+        <input type="edad"  id="inputAge" formControlName="edad" class="form-control"  placeholder="6" required>       
+      </div>
+    
+      <div class="form-label-group">
+        <label for="inputDescription">Descripcion</label>
+        <input type="descripcion"  id="inputDescription" formControlName="descripcion" class="form-control"  placeholder="Perro jugueton" required>       
+      </div>
+
+      <div class="form-label-group">
+        <label for="inputImage">Link de imagen</label>
+        <input type="imagen"  id="inputImage" class="form-control" formControlName="imagen" placeholder="https://i.pinimg.com/ebcf.jpg" required>       
+      </div>
+
+    <input type="button" (click)="getData()"class="btn btn-lg text-white bg-dark btn-block mb-5 mt-3" value="Agregar">
+  </form>
+</div>
+</div>
